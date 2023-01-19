@@ -1,0 +1,12 @@
+1. Components 
+    - Home  : FormComponent + PoemContainer 
+    - PoemContainer : Poem Component 
+    - PoemComponent
+    - FormComponent : 
+    - Favourites Component : FavouritesContainer
+    - Favourites Component 
+
+
+Process 
+1. Interactivity on a single poem : delete , mark as read 
+2. Where should the state be ? 
