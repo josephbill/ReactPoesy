@@ -8,6 +8,8 @@ import PoemsContainer from "../Poems/PoemsContainer";
 const Home = () => {
     //manage our state here 
     const [poems,setPoems] = useState([]);
+    const [favouritePoems,setFavouritePoems] = useState([]);
+
     const [show,setShow] = useState(false);
 
     function handleClick(){
@@ -23,6 +25,8 @@ const Home = () => {
               <PoemsContainer
                  poems={poems}
                  setPoems={setPoems}
+                 favouritePoems={favouritePoems}
+                 setFavouritePoems={setFavouritePoems}
               />
         </div>
     )

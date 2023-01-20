@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Poem from "./Poem";
 
-function PoemsContainer({poems, setPoems}) {
+function PoemsContainer({poems, setPoems,favouritePoems,setFavouritePoems}) {
 
   const [isLoaded, setIsLoaded] = useState(false);
   //fetch the poems from the db.json
@@ -41,6 +41,8 @@ function PoemsContainer({poems, setPoems}) {
       author={poem.author} 
       poems = {poems}
       setPoems = {setPoems}
+      favouritePoems={favouritePoems}
+      setFavouritePoems={setFavouritePoems}
       />
   })
   
