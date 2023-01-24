@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import Home from "./components/Home/Home";
 import Favourites from './components/Favourites/Favourites';
 import {BrowserRouter,Routes,Route,Link} from "react-router-dom"
+import FormikYupForm from './components/Formik/FormikYupForm';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         {/* links */}
         <Link to={'/'} style={{marginLeft: 0 +'px', color: 'white'}}>Home</Link>
         <Link to={'/favourites'} style={{marginLeft: 40 +'px', color: 'white'}}>Favourites</Link>
+        <Link to={'/formikform'} style={{marginLeft: 40 +'px', color: 'white'}}>Formik Form</Link>
        </nav>
        <Routes>
            <Route exact path="/" element={
@@ -28,6 +30,9 @@ function App() {
            }/>
            <Route exact path="/favourites" element={
                <Favourites/>
+           }/>
+              <Route exact path="/formikform" element={
+               <FormikYupForm/>
            }/>
        </Routes>
     </BrowserRouter>
