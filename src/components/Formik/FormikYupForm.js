@@ -31,7 +31,7 @@ const FormikYupForm = () => {
     initialValues={intialValues}
     validationSchema={loginSchema}
     onSubmit={(values) => {
-      console.log(values);
+      console.log(values.email);
     }}
   >
     {(formik) => {
